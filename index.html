@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Trophy Duel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="ui">
+    <div class="top">
+      <div class="pill">HP <b id="hp">100</b></div>
+      <div class="pill">AI <b id="aihp">100</b></div>
+      <div class="pill">TIME <b id="time">60</b></div>
+      <div class="pill">🏆 <b id="trophies">0</b></div>
+    </div>
+
+    <div class="mid">
+      <div class="pill" style="text-align:center;">
+        POINT <b id="pScore">0</b> : <b id="aScore">0</b>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <button id="dash" class="btn">Dash</button>
+      <button id="shield" class="btn">Shield</button>
+    </div>
+  </div>
+
+  <div id="toast" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
