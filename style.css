@@ -1,0 +1,35 @@
+html,body{
+margin:0;
+background:#0b1020;
+color:#fff;
+font-family:system-ui,Arial;
+height:100%;
+}
+#game{width:100vw;height:100vh;display:block;}
+#ui{
+position:fixed;inset:0;
+pointer-events:none;
+padding:10px;
+display:flex;flex-direction:column;gap:8px;
+}
+.top{display:flex;gap:8px;flex-wrap:wrap;}
+.mid{display:flex;justify-content:center;}
+.bottom{
+margin-top:auto;
+display:flex;gap:10px;justify-content:flex-end;
+pointer-events:auto;
+}
+.pill{
+background:rgba(255,255,255,.1);
+padding:6px 10px;
+border-radius:999px;
+font-size:13px;
+}
+.btn{
+background:#7aa7ff;
+color:#000;
+border:none;
+border-radius:14px;
+padding:14px 18px;
+font-weight:700;
+}
