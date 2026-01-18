@@ -62,9 +62,9 @@ c.addEventListener("touchend",()=>{
 },{passive:false});
 
 function updatePlayer(){
-  const speed=5;
-  player.x+=joy.dx*speed*8;
-  player.y+=joy.dy*speed*8;
+  const speed=2.2;          // was 5
+  player.x+=joy.dx*speed*3; // was *8
+  player.y+=joy.dy*speed*3; // was *8;
   player.x=clamp(player.x,player.r,world.w-player.r);
   player.y=clamp(player.y,player.r,world.h-player.r);
 }
